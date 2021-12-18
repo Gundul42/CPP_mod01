@@ -6,7 +6,7 @@
 /*   By: graja <graja@student.42wolfsburg.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/17 10:36:27 by graja             #+#    #+#             */
-/*   Updated: 2021/12/18 12:06:54 by graja            ###   ########.fr       */
+/*   Updated: 2021/12/18 13:52:27 by graja            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,13 +22,12 @@ class	Zombie
 		std::string	_name;
 
 	public:
-		Zombie(std::string name);
+		Zombie();
 		~Zombie(void);
-
-		void			announce(void);
+		void		set_name(std::string name);
+		void		announce(void);
 };
 
-Zombie	*newZombie(std::string name);
-void		randomChump(std::string name);
+Zombie	*zombieHorde(int N, std::string name);
 
 #endif

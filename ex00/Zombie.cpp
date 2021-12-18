@@ -6,16 +6,11 @@
 /*   By: graja <graja@student.42wolfsburg.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/17 10:35:24 by graja             #+#    #+#             */
-/*   Updated: 2021/12/18 10:28:39 by graja            ###   ########.fr       */
+/*   Updated: 2021/12/18 12:07:21 by graja            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
-
-std::string	Zombie::get_name(void)
-{
-	return (this->_name);
-}
 
 void		Zombie::announce(void)
 {

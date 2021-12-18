@@ -1,34 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: graja <graja@student.42wolfsburg.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/17 10:36:27 by graja             #+#    #+#             */
-/*   Updated: 2021/12/18 12:06:54 by graja            ###   ########.fr       */
+/*   Created: 2021/12/17 10:35:24 by graja             #+#    #+#             */
+/*   Updated: 2021/12/18 13:58:17 by graja            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_H
-# define ZOMBIE_H
+#include "Zombie.hpp"
 
-# include <string>
-# include <iostream>
-
-class	Zombie
+void		Zombie::announce(void)
 {
-	private:
-		std::string	_name;
+	std::cout << "<" << this->_name << "> BraiiiiiiiiinnnzzzzZ" << std::endl;
+}
 
-	public:
-		Zombie(std::string name);
-		~Zombie(void);
+Zombie::Zombie()
+{
+}
 
-		void			announce(void);
-};
+void		Zombie::set_name(std::string name)
+{
+	this->_name = name;
+}
 
-Zombie	*newZombie(std::string name);
-void		randomChump(std::string name);
-
-#endif
+Zombie::~Zombie(void)
+{
+	std::cout << "<" << this->_name << "> just lost his head" << std::endl;
+}
