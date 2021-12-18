@@ -6,7 +6,7 @@
 /*   By: graja <graja@student.42wolfsburg.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/17 10:35:24 by graja             #+#    #+#             */
-/*   Updated: 2021/12/17 14:09:48 by graja            ###   ########.fr       */
+/*   Updated: 2021/12/18 10:28:39 by graja            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,5 @@ Zombie::Zombie(std::string name): _name(name)
 
 Zombie::~Zombie(void)
 {
-	std::cout << "<" << this->_name << "> just died" << std::endl;
+	std::cout << "<" << this->_name << "> just lost his head" << std::endl;
 }
